@@ -61,7 +61,7 @@ function saveGame() {
     const positions = {};
 
     document.querySelectorAll(".whitebox2").forEach(card => {
-        positions[card.id] = card.parentElement.parentElement.id;  // deck or bottom container
+        positions[card.id] = card.parentElement.parentElement.id; 
     });
 
     localStorage.setItem("cardPositions", JSON.stringify(positions));
